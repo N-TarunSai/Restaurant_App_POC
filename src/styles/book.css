@@ -1,0 +1,80 @@
+.book-section {
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+.book-section .title {
+  font-size: 36px;
+  margin-bottom: -40px;
+}
+
+.book-section .info {
+  color: var(--muted);
+  padding-bottom: 24px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid var(--border);
+}
+
+.book-section .form-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.book-section .form-row input,
+.book-section .form-row select {
+  background: transparent;
+  border: 1px solid white;
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 6px;
+  outline: none;
+  min-width: 300px;
+  text-align: start;
+}
+
+#btn {
+  border: 1px solid white;
+  background: transparent;
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 6px;
+  outline: none;
+  min-width: 300px;
+}
+
+.book-section button {
+  border: 1px solid white;
+  background: transparent;
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 6px;
+  outline: none;
+  min-width: 50px;
+  cursor: pointer;
+}
+
+.book-section .Image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-top: 1px solid var(--border);
+}
+
+.success {
+  background: #0f172a;
+  border: 1px solid var(--border);
+  padding: 12px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+#date::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}

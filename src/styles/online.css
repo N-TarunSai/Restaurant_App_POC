@@ -1,0 +1,163 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  min-width: 80%;
+}
+
+.title {
+  font-size: 40px;
+  text-align: center;
+  padding: 40px 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.search-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+/* Filter Controls Column */
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.controls-column {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-end;
+}
+
+/* Responsive layout for filters */
+@media (max-width: 768px) {
+  .search-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .controls,
+  .controls-column {
+    align-items: stretch;
+    
+  }
+}
+
+.place-order {
+  position: sticky;
+  bottom: 16px;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal {
+  background: #111;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  max-width: 680px;
+  width: 92%;
+  padding: 20px;
+}
+
+.modal header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.modal .content {
+  max-height: 60vh;
+  overflow: auto;
+}
+
+.modal footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Order Summary */
+ul.plain {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+hr.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 18px 0;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+}
+.thumb {
+  width: 70px;
+  height: 52px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+/* Quantity Stepper */
+.stepper {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  align-items: center;
+  background: var(--panel);
+}
+
+.stepper button {
+  border: none;
+  background: transparent;
+  padding: 10px 14px;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.stepper button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.stepper span {
+  min-width: 32px;
+  text-align: center;
+  display: inline-block;
+  font-weight: 600;
+  color: var(--text);
+}
+
+
+@media (max-width: 600px) {
+  .thumb {
+    width: 60px;
+    height: 45px;
+  }
+}
+

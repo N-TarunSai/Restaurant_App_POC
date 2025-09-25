@@ -1,0 +1,121 @@
+.menu-section {
+  background: black;
+  box-sizing: border-box;
+  color: white;
+}
+
+#MENU{
+  background-color: black;
+  width: 80%;
+  text-align: left;
+}
+
+.menu-block h3 {
+  font-family: 'Playfair Display', serif;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 10px 0;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+/* Menu Item */
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
+  flex-wrap: wrap;
+  min-width: 100%;
+}
+
+.item .meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 80%;
+}
+
+.item .meta .title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+}
+
+.item .meta p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.item .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  border: 1px solid var(--border);
+}
+
+.item .dot.veg {
+  background: #1b5e20;
+}
+
+.item .dot.nonveg {
+  background: #7f1d1d;
+}
+
+.item .price {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .item .meta {
+    max-width: 100%;
+  }
+
+  .item .price {
+    align-self: flex-end;
+    font-size: 1rem;
+    margin-top: 4px;
+  }
+
+  .menu-block h3 {
+    font-size: 1.25rem;
+  }
+  
+
+  .item .meta p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-section {
+    padding: 20px 12px;
+  }
+
+  .menu-block h3 {
+    font-size: 1.1rem;
+  }
+
+  .item .meta .title {
+    font-size: 1rem;
+  }
+
+  .item .meta p {
+    font-size: 0.85rem;
+  }
+
+  .item .price {
+    font-size: 0.95rem;
+  }
+}
